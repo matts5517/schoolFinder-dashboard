@@ -9,3 +9,11 @@ var map =  new mapboxgl.Map({
     center: [-105, 37], // starting position
     zoom: 3 // starting zoom
 });
+
+
+map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken
+}));
+
+// Add geolocate control to the map.
+map.addControl(new mapboxgl.GeolocateControl());

@@ -12,18 +12,10 @@ body{
 input:hover{
   cursor: pointer;
 }
-input[type=checkbox]:checked{
-  color: red;
-}
 .hide{
   display: none;
 }
-.hover{
-  color: orange;
-}
-.orangeText{
-  color: orange;
-}
+
 
 
 
@@ -32,30 +24,63 @@ input[type=checkbox]:checked{
   position: absolute; top: 5px; z-index: 1000;
 }
 .navLogo{
-  color: white; font-size: 24px; font-family: Copperplate, "Copperplate Gothic Light", fantasy; padding: 20px; text-align: left; flex: 1;
+  color: white; font-size: 24px; font-family: Copperplate, "Copperplate Gothic Light", fantasy; padding: 20px; padding-top: 10px; text-align: left; flex: 1;
 } 
-/*.navWrapper{
-  width: 100%; height: 65px; background-color: black; display: flex; align-items: center;
+.settingsMenu{
+  top: 5px; right: 9px; z-index: 1000; position: absolute;
+}
+.hamSettings{
+  color: white; font-size: 34px;
 
 }
-.navWrapper div{
-  color: white; 
-}
-.navLogo{
-  color: white; font-size: 24px; font-family: Copperplate, "Copperplate Gothic Light", fantasy; padding: 20px; text-align: left; flex: 1;
-}
-.navContentRight{
-  display: flex; margin-left: auto; margin-right: 10px;
-}
-.navContentRight div{
-  padding: 15px; 
-}*/
+
 
 /* Side bar styling ////////////////////////////////////////////////////////////////////////////////////////*/
 .sideBarNavigation{
   position: absolute; left: 10px; z-index: 1000; top: 75px; color: white;
 }
-.pillCheckbox:hover{
+.legendWrapper{
+  height: 200px; width:100px; background-color: rgba(37,61,89,.7);
+  position: absolute; bottom: 31px; z-index: 1000; right: 10px; color: white;
+}
+
+
+/* Map Styling ///////////////////////////////////////////////////////////////////////////////////////////////////*/
+.mapWrapper{
+  height: 100%; width: 100%; float: right; background-color: red; margin: auto; top:0px; right: 0px; position: absolute;
+}
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+  border-radius: 100px; left:-375px; height: 28px; margin-top: 12px;
+}
+.mapboxgl-ctrl-geocoder .geocoder-icon-search{
+  top: 5px;
+}
+.mapboxgl-ctrl-geocoder input[type='text']{
+  height: 28px;
+}
+/*Pop up styles*/
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip,.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
+  border-right-color: grey;
+}
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
+  border-left-color: grey;
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+  border-top-color: grey;
+}
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
+  border-bottom-color: grey;
+}
+.mapboxgl-popup-content{
+  background-color: grey; font-size: 20px;
+}
+
+
+
+
+
+/*.pillCheckbox:hover{
   cursor: pointer; color: orange; background-color: rgba(37,61,89,1); 
 }
 .pillCheckbox{
@@ -83,7 +108,7 @@ input[type=checkbox]:checked{
 }
 .cntrlWrap{
   display: none;
-}
+}*/
 /*.sideBarWrapper{
   width:25%; height: 100%; background-color: #66778a; position: absolute;
 }
@@ -95,7 +120,7 @@ input[type=checkbox]:checked{
 }*/
 
 /* Current observation styling ///////////////////////////////////////////////////////////////////////////// */
-.currentRadioStyle{
+/*.currentRadioStyle{
   display: flex; padding:5px;
 }
 .form-text{
@@ -106,9 +131,9 @@ input[type=checkbox]:checked{
 }
 .cb_content{
   display: flex; justify-content: center;
-}
+}*/
 /* Severe Weather styling ///////////////////////////////////////////////////////////////////////////// */
-.severeTimeEnable{
+/*.severeTimeEnable{
   display: flex; justify-content: center; align-items: center; padding: 5px;
 }
 
@@ -136,54 +161,8 @@ input[type=checkbox]:checked{
     border-color: rgba(16,22,26,.1) rgba(16,22,26,.1) rgba(16,22,26,.3)!important;
     width: 17px!important;
     height: 17px!important;
-}
-
-/* Map Styling ///////////////////////////////////////////////////////////////////////////////////////////////////*/
-.mapWrapper{
-  height: 100%; width: 100%; float: right; background-color: red; margin: auto; top:0px; right: 0px; position: absolute;
-}
-
-
-/*.sideMapWrap{
-  display: flex; width: 100%;
 }*/
 
-/*side bar styling*/
-/*.controlWrap{
-  display: flex; width: 264px; height: 1000px; background-color: grey;
-}
-.toggleDesc{
-  width: 200px;
-}
-.button{
-  width: 60px;height: 30px; background-color: #f4f4f4;
-}
-.button:hover{
-  background-color: #b8e1fc;
-  cursor: pointer;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.25);
-}*/
 
-/*Pop up styles*/
-.mapboxgl-popup-anchor-left .mapboxgl-popup-tip,.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
-  border-right-color: grey;
-}
-.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
-  border-left-color: grey;
-}
-.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
-  border-top-color: grey;
-}
-.mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
-  border-bottom-color: grey;
-}
-.mapboxgl-popup-content{
-  background-color: grey; font-size: 20px;
-}
-
-
-.severePlayStop{
-  display: flex; height: 25px; width: 50px; border-style: solid; border-color: red;
-}
 
 
