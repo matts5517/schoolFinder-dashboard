@@ -25,6 +25,7 @@
     <script src="https://use.fontawesome.com/6ba6c58d69.js"></script>
     <link href='css/newComp.css' rel='stylesheet' />
     <link href='css/main.css' rel='stylesheet' />
+    <link href='css/ui.css' rel='stylesheet' />
   </head>
 
   <body>
@@ -33,14 +34,51 @@
         <i class="fa fa-bars hamSettings" aria-hidden="true"></i>
       </div>
         <div class="sideBarNavigation">
-
-     
-          
-
+            <div id="degreeToggle" class="degreeToggle">
+              <div>Choose degree:</div>
+              <label class="form-component" for="a-option">
+                <input checked type="radio" id="a-option" name="food">
+                <div class="check"></div>
+                <span class="form-text">All</span>
+              </label>
+              
+              <label class="form-component" for="b-option">
+                <input type="radio" id="b-option" name="food">
+                <div class="check"></div>
+                <span class="form-text">Bachelor's</span>
+              </label>
+              
+              <label class="form-component" for="x-option">
+                <input type="radio" id="x-option" name="food">
+                <div class="check"></div>
+                <span class="form-text">Associate's</span>
+              </label>
+            </div>
 
         </div>
-
-
+      <div id="basemapSelector" class="basemapSelector">
+        <div class="dropdown">
+          <button class="dropbtn">Basemap</button>
+          <div class="dropdown-content">
+          <label class="form-component" for="x-option">
+              <input checked type="radio" id="x-option" name="food">
+              <div class="check"></div>
+              <span class="form-text">Dark</span>
+            </label>
+            <label class="form-component" for="x-option">
+              <input type="radio" id="x-option" name="food">
+              <div class="check"></div>
+              <span class="form-text">Streets</span>
+            </label>
+            <label class="form-component" for="x-option">
+              <input type="radio" id="x-option" name="food">
+              <div class="check"></div>
+              <span class="form-text">Imagery</span>
+            </label>
+          </div>
+        </div>
+       
+      </div>
       <!-- Legend wrapper /////////////////////////// -->
       <div id="legendWrapper" class="legendWrapper">
         Legend Placeholder
