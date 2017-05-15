@@ -39,7 +39,21 @@ input:hover{
 .sideBarNavigation{
   position: absolute; left: 10px; z-index: 1000; top: 75px; color: white;
 }
+<<<<<<< HEAD
 /* Legend Styling  /////////////////////////////////////////////////////////////////////////////////////////*/
+=======
+.degreeToggle{
+  background-color: rgba(37,61,89,.7); padding: 15px; border-radius: 10px;
+}
+.form-component{
+  display: flex; padding: 3px;
+}
+
+.basemapSelector{
+  position: absolute; bottom: 478px; right: 10px; z-index: 1000; top: 80px;
+}
+
+>>>>>>> development
 .legendWrapper{
   height: 200px; width:100px; background-color: rgba(37,61,89,.7);
   position: absolute; bottom: 31px; z-index: 1000; right: 10px; color: white;
@@ -52,7 +66,11 @@ input:hover{
 }
 
 .mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+<<<<<<< HEAD
   border-radius: 100px; left:-42px; height: 28px; margin-top: 9px;
+=======
+  border-radius: 100px; right:44px; height: 28px; margin-top: 8px;
+>>>>>>> development
 }
 .mapboxgl-ctrl-geocoder .geocoder-icon-search{
   top: 5px;
@@ -61,7 +79,7 @@ input:hover{
   height: 28px;
 }
 /*Pop up styles*/
-.mapboxgl-popup-anchor-left .mapboxgl-popup-tip,.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip,.mapboxgl-popup-anchor-right  .mapboxgl-popup-tip{
   border-right-color: grey;
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
@@ -76,7 +94,7 @@ input:hover{
 .mapboxgl-popup-content{
   background-color: grey; font-size: 20px;
 }
-
+ 
 
 
 
