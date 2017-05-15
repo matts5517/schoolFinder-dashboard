@@ -39,6 +39,7 @@ input:hover{
 .sideBarNavigation{
   position: absolute; left: 10px; z-index: 1000; top: 75px; color: white;
 }
+/* Legend Styling  /////////////////////////////////////////////////////////////////////////////////////////*/
 .legendWrapper{
   height: 200px; width:100px; background-color: rgba(37,61,89,.7);
   position: absolute; bottom: 31px; z-index: 1000; right: 10px; color: white;
@@ -51,7 +52,7 @@ input:hover{
 }
 
 .mapboxgl-ctrl-top-right .mapboxgl-ctrl {
-  border-radius: 100px; left:-375px; height: 28px; margin-top: 12px;
+  border-radius: 100px; left:-42px; height: 28px; margin-top: 9px;
 }
 .mapboxgl-ctrl-geocoder .geocoder-icon-search{
   top: 5px;
